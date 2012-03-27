@@ -1,0 +1,11 @@
+[apply]
+  whitespace = nowarn
+[color]
+  ui = auto
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
+[pack]
+  threads = 0
+[push]
+  default = upstream
