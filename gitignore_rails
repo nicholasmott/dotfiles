@@ -1,0 +1,54 @@
+## General Items
+*.swp
+*~
+.project
+
+## Compass
+.sass-cache
+
+## Rails
+capybara-*.html
+config/database.yml
+config/heroku.yml
+pickle-email-*.html
+rails_best_practices*.html
+README
+rerun.txt
+**.orig
+*.rbc
+*.sassc
+
+.jhw-cache/
+
+public/assets/
+public/system/
+spec/tmp/
+vendor/bundle/
+
+## Ruby
+.bundle
+.config
+.env
+.jasmine-headless-webkit
+.rdebugrc
+.rspec
+
+gem_graph.png
+*.gem
+*.rbc
+
+bin/
+coverage/
+InstalledFiles
+lib/bundler/man
+log/
+pkg
+rdoc
+spec/reports/
+test/tmp/
+test/version_tmp/
+tmp/
+
+## YARD artifacts
+.yardoc
+_yardoc
