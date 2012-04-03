@@ -1,10 +1,10 @@
 export rvm_path="/Users/Nick/.rvm"
 
-# Compile using 64-Bit Libraries
+# Compile using 64-Bit Libraries on Mac OS X Lion and Snow Leopard
 export rvm_archflags="-arch x86_64"
 
-# Set options to pass to gem command
+# Set options to pass through to gem command via RVM
 export rvm_gem_options="--no-rdoc --no-ri"
 
-# Use multiple cores for compile(cores - 1)
+# Use multiple cores for compile (cores - 1) to improve performance
 export rvm_make_flags="-j3"
