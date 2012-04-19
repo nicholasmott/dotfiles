@@ -29,7 +29,7 @@ group :assets do
 end                                                           
                                                               
 group :test do                                                
-  gem 'capybara',             '~> 1.1.2'                      # Simulates the user actions for integration testing
+  gem 'capybara',             '~> 1.1'                        # Simulates the user actions for integration testing
   gem 'capybara-webkit'                                       # Simulates in browser actions for integration testing js
   gem 'factory_girl_rails',   '~> 3.1',   require: false      # Test data setup - required in spec_helper.rb
   gem 'launchy'                                               # For Capybara debugging
@@ -60,8 +60,8 @@ group :development do
   gem 'pry-doc'                                               # Documentation for Pry
   gem 'pry-nav'                                               # Navigate Pry with step, next, continue
   gem 'rails_best_practices'                                  # Provides code improvement suggestions  
-  gem 'rails-footnotes',      '~> 3.7.6'                      # Provides debugging information on every page in dev
-  gem 'rb-fsevent',           '~> 0.9.0'                      # Efficient event listening for Guard
+  gem 'rails-footnotes'                                       # Provides debugging information on every page in dev
+  gem 'rb-fsevent'                                            # Efficient event listening for Guard
   gem 'ruby_gntp'                                             # Send messages from Guard to Growl
   gem 'ruby-graphviz'                                         # Dependency for visual model of gem dependencies
 end
