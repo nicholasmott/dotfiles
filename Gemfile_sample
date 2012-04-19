@@ -1,0 +1,67 @@
+source :rubygems
+
+gem 'rails',                  '3.2.3'
+gem 'bundler',                '1.1.2'                         # Allows locking bundler to Heroku version
+gem 'pg',                     '0.13.2'                        # Postgres connector
+                                                              
+gem 'acts_as_api',            '~> 0.3.11'                     # API development and configuration
+gem 'by_star',                '~> 1.0.1'                      # Datetime scope selectors
+gem 'cancan',                 '~> 1.6.7'                      # Authorisation solution
+gem 'jquery-rails',           '~> 2.0.1'                      # jquery
+gem 'newrelic_rpm',           '~> 3.3.2'                      # Performance monitoring
+gem 'rack',                   '~> 1.4.1'                      # Rack Middleware
+gem 'rake',                   '~> 0.9.2.2'                    # Ruby Make
+gem 'simple_form',            '~> 2.0.0'                      # Easier Rails forms
+gem 'sorcery',                '~> 0.7.6'                      # Authentication solution
+gem 'tabulous',               '~> 1.3.0'                      # Tabs in Rails
+gem 'thin',                   '~> 1.3.1'                      # Thin Webserver, standard for Heroku
+gem 'validates_timeliness',   '~> 3.0.8'                      # Datetime validations and parsing
+                                                              
+gem 'awesome_print'                                           # Console extension
+gem 'pry-rails'                                               # Easy access to Pry for this rails app
+                                                          
+group :assets do                                            
+  gem 'coffee-rails',         '~> 3.2.1'                      # easier to write javascript
+  gem 'compass-rails',        '~> 1.0.0'                      # Better integrated SASS extensions
+  gem 'compass-susy-plugin',  '~> 0.9.0', require: 'susy'     # Fluid & Elastic grids
+  gem 'sass-rails',           '~> 3.2.3'                      # easier to write CSS
+  gem 'uglifier',             '>= 1.0.3'                      # JS Minifier
+end                                                           
+                                                              
+group :test do                                                
+  gem 'capybara',             '~> 1.1.2'                      # Simulates the user actions for integration testing
+  gem 'capybara-webkit'                                       # Simulates in browser actions for integration testing js
+  gem 'factory_girl_rails',   '~> 3.1',   require: false      # Test data setup - required in spec_helper.rb
+  gem 'launchy'                                               # For Capybara debugging
+  gem 'shoulda-matchers',                 require: false      # Adds shoulda for RSpec - required in spec_helper.rb
+  gem 'simplecov',                        require: false      # Provides test code coverage - require in spec_helper.rb
+  gem 'spork-rails',          '~> 3.2'                        # Distributed testing server
+end                                                           
+                                                              
+group :development, :test do                                  
+  gem 'axe'                                                   # Better log tailing and searching
+  gem 'itslog'                                                # Better log formatting
+  gem 'railroady'                                             # Visual documentation of Models and Controllers
+  gem 'rspec-rails',          '~> 2.8'                        # Ruby Testing framework, 
+end                                                           
+                                                              
+group :development do                                         
+  gem 'annotate',             '2.4.1.beta1'                   # Annotate models with schema's
+  gem 'brakeman'                                              # Rails security scanner
+  gem 'foreman'                                               # Running Heroku stype Procfile workers
+  gem 'guard'                                                 # Watches for changes and runs a specific action
+  gem 'guard-annotate'                                        # Guard for annotate
+  gem 'guard-brakeman'                                        # Guard for brakeman
+  gem 'guard-bundler'                                         # Guard for bundler
+  gem 'guard-process'                                         # Guard for generic processes, for use with foreman
+  gem 'guard-rspec'                                           # Guard for rspec
+  gem 'guard-spork'                                           # Guard for spork
+  gem 'heroku'                                                # Provides access to Heroku commands
+  gem 'pry-doc'                                               # Documentation for Pry
+  gem 'pry-nav'                                               # Navigate Pry with step, next, continue
+  gem 'rails_best_practices'                                  # Provides code improvement suggestions  
+  gem 'rails-footnotes',      '~> 3.7.6'                      # Provides debugging information on every page in dev
+  gem 'rb-fsevent',           '~> 0.9.0'                      # Efficient event listening for Guard
+  gem 'ruby_gntp'                                             # Send messages from Guard to Growl
+  gem 'ruby-graphviz'                                         # Dependency for visual model of gem dependencies
+end
