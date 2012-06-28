@@ -1,5 +1,6 @@
 ## General Items
 *.swp
+*.swo
 *~
 .project
 
@@ -23,7 +24,6 @@ rerun.txt
 public/assets/
 public/system/
 spec/tmp/
-vendor/bundle/
 
 ## Ruby
 .bundle
@@ -48,6 +48,7 @@ spec/reports/
 test/tmp/
 test/version_tmp/
 tmp/
+vendor/bundle/
 
 ## YARD artifacts
 .yardoc
